@@ -1,0 +1,96 @@
+https://fonts.googleapis.com
+https://fonts.gstatic.com
+https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap
+#
+images/Image_20251006_174809.png
+articles/Article - 2025-10-06 17-48-09.html
+images/Image_20251006_173431.png
+articles/Article - 2025-10-06 17-34-31.html
+images/Image_20251006_173226.png
+articles/Article - 2025-10-06 17-32-26.html
+images/Image_20251006_145156.png
+articles/Article - 2025-10-06 14-51-56.html
+images/Image_20251006_143201.png
+articles/Article - 2025-10-06 14-32-01.html
+images/Image_20251006_141021.png
+articles/Article - 2025-10-06 14-10-21.html
+images/Image_20251006_140313.png
+articles/Article - 2025-10-06 14-03-13.html
+images/Image_20251006_131636.png
+articles/Article - 2025-10-06 13-16-36.html
+images/Image_20251006_123630.png
+articles/Article - 2025-10-06 12-36-30.html
+images/Image_20251006_115236.png
+articles/Article - 2025-10-06 11-52-36.html
+images/Image_20251006_113154.png
+articles/Article - 2025-10-06 11-31-54.html
+images/Image_20251006_105401.png
+articles/Article - 2025-10-06 10-54-01.html
+images/Image_20251006_104509.png
+articles/Article - 2025-10-06 10-45-09.html
+images/Image_20251006_094256.png
+articles/Article - 2025-10-06 09-42-56.html
+images/Image_20251006_084715.png
+articles/Article - 2025-10-06 08-47-15.html
+images/Image_20251006_084116.png
+articles/Article - 2025-10-06 08-41-16.html
+images/Image_20251006_083212.png
+articles/Article - 2025-10-06 08-32-12.html
+images/Image_20251006_083006.png
+articles/Article - 2025-10-06 08-30-06.html
+images/Image_20251006_082516.png
+articles/Article - 2025-10-06 08-25-16.html
+images/Image_20251006_082128.png
+articles/Article - 2025-10-06 08-21-28.html
+images/Image_20251006_081805.png
+articles/Article - 2025-10-06 08-18-05.html
+images/Image_20251006_081533.png
+articles/Article - 2025-10-06 08-15-33.html
+images/Image_20251006_081231.png
+articles/Article - 2025-10-06 08-12-31.html
+images/Image_20251006_080948.png
+articles/Article - 2025-10-06 08-09-48.html
+images/Image_20251006_080624.png
+articles/Article - 2025-10-06 08-06-24.html
+images/Image_20251006_080313.png
+articles/Article - 2025-10-06 08-03-13.html
+images/Image_20251006_001028.png
+articles/Article - 2025-10-06 00-10-28.html
+images/Image_20251006_000726.png
+articles/Article - 2025-10-06 00-07-26.html
+images/Image_20251006_000421.png
+articles/Article - 2025-10-06 00-04-21.html
+images/Image_20251006_000132.png
+articles/Article - 2025-10-06 00-01-32.html
+images/Image_20251005_235808.png
+articles/Article - 2025-10-05 23-58-08.html
+images/Image_20251005_235410.png
+articles/Article - 2025-10-05 23-54-10.html
+images/Image_20251005_235034.png
+articles/Article - 2025-10-05 23-50-34.html
+images/Image_20251005_234640.png
+articles/Article - 2025-10-05 23-46-40.html
+images/Image_20251005_234344.png
+articles/Article - 2025-10-05 23-43-44.html
+images/Image_20251005_234129.png
+articles/Article - 2025-10-05 23-41-29.html
+images/Image_20251005_232401.png
+articles/Article - 2025-10-05 23-24-01.html
+articles/Article - 2025-10-05 23-06-10.html
+articles/Article - 2025-10-05 21-15-54.html
+articles/Article - 2025-10-05 21-12-57.html
+articles/Article - 2025-10-05 21-09-37.html
+articles/Article - 2025-10-05 21-01-49.html
+articles/Article - 2025-10-05 20-19-15.html
+articles/Article - 2025-10-05 16-27-10.html
+articles/Article - 2025-10-05 16-21-57.html
+articles/Article - 2025-10-05 10-36-39.html
+articles/Article - 2025-10-05 10-32-31.html
+articles/Article - 2025-10-05 10-27-22.html
+articles/Article - 2025-10-05 10-17-06.html
+articles/Article - 2025-10-05 10-09-09.html
+articles/Article - 2025-10-05 09-23-00.html
+https://www.googletagmanager.com/gtag/js?id=G-MM2NZG0H63
+https://cdn.tailwindcss.com
+images/Image_20251005_230610.png
+images/Image_20251005_211554.png
