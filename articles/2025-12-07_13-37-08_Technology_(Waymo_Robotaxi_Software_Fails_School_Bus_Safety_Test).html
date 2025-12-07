@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The School Bus Test: Waymo's Software Failure and the Autonomous Vehicle Safety Reckoning</title>
+    <style>
+        body { font-family: 'Georgia', serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f9f9f9; color: #333; max-width: 800px; margin: 0 auto; }
+        header { border-bottom: 2px solid #ddd; padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { color: #2c3e50; font-size: 2.2em; margin-bottom: 10px; }
+        .subtitle { color: #34495e; font-size: 1.6em; margin-top: 0; font-weight: normal; }
+        h2, h3 { color: #34495e; font-size: 1.8em; border-bottom: 1px solid #bdc3c7; padding-bottom: 5px; margin-top: 40px; }
+        p { margin-bottom: 15px; text-align: justify; }
+        .summary { background-color: #ecf0f1; padding: 0 20px 20px 20px; border-left: 4px solid #3498db; margin: 20px 0; font-style: italic; }
+        .summary h2 { margin-top: 0; padding-top: 20px; }
+        .references ol { list-style-type: decimal; padding-left: 20px; }
+        .references li { margin-bottom: 15px; }
+        .ref-justification { font-size: 0.9em; color: #555; font-style: italic; margin-top: 4px; }
+        a { color: #3498db; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        sup { line-height: 1; }
+        sup a { text-decoration: none; color: #3498db; font-size: 0.8em; vertical-align: super; }
+        sup a:hover { text-decoration: underline; }
+        .key-facts { background-color: #ffffff; padding: 20px; margin: 30px 0; border: 1px solid #ddd; }
+        .key-facts h3 { margin-top: 25px; margin-bottom: 15px; border-bottom: none; padding-bottom: 0; font-size: 1.15em; }
+        .key-facts h3:first-of-type { margin-top: 0; }
+        .key-facts ul { list-style-type: disc; padding-left: 25px; margin: 0; }
+        .key-facts li { margin-bottom: 10px; padding-left: 5px; }
+        .article-image { float: right; max-width: 130px; height: auto; margin: 0 0 15px 20px; border: 1px solid #ddd; padding: 4px; background-color: #fff; }
+        @media (max-width: 600px) { body { padding: 10px; } h1 { font-size: 1.8em; } .subtitle { font-size: 1.3em; } h2, h3 { font-size: 1.5em; } .article-image { float: none; display: block; margin: 20px auto; max-width: 90%; } }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="../images/Image_20251207_133708.jpg" alt="Article image" class="article-image">
+       <h1>The School Bus Test</h1>
+    </header>
+    <main>
+       <p style="font-style: italic; color: #7f8c8d;">Sunday, 07 December 2025 13:42</p>
+        <section class="summary">
+            <h2>Summary</h2>
+           <p>The autonomous vehicle industry faces renewed scrutiny after Waymo, the self-driving subsidiary of Alphabet, announced a voluntary software recall in December 2025 to address a critical safety flaw. The issue involves robotaxis failing to stop for school buses with flashing red lights and extended stop signs, a fundamental traffic safety protocol<sup><a href="#ref-6">6</a>,<a href="#ref-7">7</a></sup>. This decision followed a preliminary investigation by the National Highway Traffic Safety Administration (NHTSA) and reports of at least 19 illegal passing incidents in Austin, Texas, since the start of the school year<sup><a href="#ref-2">2</a>,<a href="#ref-5">5</a>,<a href="#ref-6">6</a></sup>. The incidents, which persisted even after an attempted software fix in November 2025, underscore the persistent challenge of 'edge-case' detection for artificial intelligence systems and raise profound questions about the regulatory oversight required to ensure public trust as driverless technology expands across American cities<sup><a href="#ref-4">4</a>,<a href="#ref-6">6</a></sup>. The recall marks the third such software-related action for Waymo in 18 months, placing the company at the centre of a national debate over the balance between technological innovation and the absolute standard of public safety<sup><a href="#ref-1">1</a>,<a href="#ref-7">7</a></sup>.</p>
+        </section>
+        <section>
+           <h2>The Unseen Flaw in the Autonomous Fleet</h2>
+           <p>The promise of autonomous vehicles rests on the premise of superior safety, yet a series of incidents involving Waymo’s robotaxis and stopped school buses has exposed a critical, and highly sensitive, flaw in the company’s software<sup><a href="#ref-4">4</a>,<a href="#ref-6">6</a></sup>. Waymo, the self-driving unit of Alphabet, confirmed in December 2025 that it would file a voluntary software recall with federal regulators to address the issue<sup><a href="#ref-6">6</a>,<a href="#ref-7">7</a>,<a href="#ref-11">11</a></sup>. The core problem lay in the vehicle’s inability to consistently adhere to one of the most sacrosanct rules of the road: stopping for a school bus that has deployed its stop sign and activated its flashing red lights<sup><a href="#ref-6">6</a></sup>. This failure is not merely a traffic violation but a direct threat to the safety of children, the most vulnerable road users<sup><a href="#ref-4">4</a>,<a href="#ref-6">6</a></sup>. The specific malfunction was described as a software issue that caused the autonomous vehicles to initially slow down or stop when approaching a school bus, only to then proceed and drive around it<sup><a href="#ref-6">6</a></sup>. This behaviour was documented in multiple cities where Waymo operates its commercial ride-hailing service<sup><a href="#ref-7">7</a></sup>. The National Highway Traffic Safety Administration (NHTSA) launched a preliminary investigation into the matter in October 2025, a probe that covered an estimated 2,000 Waymo vehicles equipped with the company’s fifth-generation automated driving system<sup><a href="#ref-3">3</a>,<a href="#ref-4">4</a></sup>. The federal inquiry was initially prompted by a media report and video footage of a Waymo robotaxi in Atlanta, Georgia, on September 22, 2025, which showed the vehicle driving around a stopped school bus while students were disembarking<sup><a href="#ref-3">3</a>,<a href="#ref-5">5</a></sup>. The incident in Atlanta served as a stark, public demonstration of the software’s failure to correctly interpret and execute the necessary safety protocol<sup><a href="#ref-3">3</a></sup>.</p>
+        </section>
+        <section>
+           <h2>A Pattern of Persistent Violations in Texas</h2>
+           <p>While the Atlanta incident initiated the federal investigation, the most extensive documentation of the problem emerged from Texas, where Waymo operates a robotaxi service in partnership with Uber<sup><a href="#ref-2">2</a>,<a href="#ref-4">4</a></sup>. Officials from the Austin Independent School District (AISD) reported a disturbing pattern of infractions, documenting at least 19 instances of Waymo vehicles illegally passing stopped school buses since the beginning of the school year<sup><a href="#ref-2">2</a>,<a href="#ref-5">5</a>,<a href="#ref-6">6</a></sup>. By early December 2025, the AISD had issued 20 citations to the company’s vehicles for improperly passing the buses<sup><a href="#ref-2">2</a>,<a href="#ref-13">13</a></sup>. The severity of the risk was highlighted by the school district’s counsel, who noted that in one instance, a Waymo vehicle drove past a stopped bus only moments after a student had crossed in front of it and while the student was still in the road<sup><a href="#ref-11">11</a></sup>. The Austin school district had been in contact with Waymo for weeks regarding the issue, even requesting that the company temporarily halt operations during peak school bus hours, specifically between 5:20 a.m. and 9:30 a.m. and from 3 p.m. to 7 p.m., until a definitive fix was implemented<sup><a href="#ref-7">7</a></sup>. In response to the mounting evidence and regulatory pressure, Waymo deployed a software update on November 17, 2025, intended to fix the issue<sup><a href="#ref-6">6</a>,<a href="#ref-13">13</a></sup>. However, the problem persisted, with AISD reporting at least five similar incidents after the November update, including a further violation on December 1, 2025, demonstrating the fix was insufficient<sup><a href="#ref-6">6</a></sup>. This failure of the initial software patch to resolve the core safety issue ultimately necessitated the formal voluntary recall filing with NHTSA<sup><a href="#ref-7">7</a></sup>.</p>
+        </section>
+        <section>
+           <h2>The Regulatory Response and the Edge-Case Challenge</h2>
+           <p>The National Highway Traffic Safety Administration’s involvement in the Waymo case is part of a broader, intensifying federal oversight of the autonomous vehicle sector<sup><a href="#ref-4">4</a></sup>. The agency’s preliminary evaluation, which began in October 2025, is a critical step that precedes any potential mandatory recall<sup><a href="#ref-3">3</a>,<a href="#ref-4">4</a></sup>. On December 3, 2025, NHTSA escalated its inquiry by formally requesting Waymo to provide detailed information on how its fifth-generation autonomous system interprets school bus signals, whether the November software update had truly addressed the problem, and whether a recall was being planned<sup><a href="#ref-6">6</a></sup>. The company was given a deadline of January 20, 2026, to respond to the agency’s comprehensive questions<sup><a href="#ref-4">4</a>,<a href="#ref-10">10</a></sup>. This incident perfectly illustrates the industry’s persistent challenge with 'edge-case detection'—rare but high-risk scenarios that are difficult to anticipate and program for in a complex, real-world environment<sup><a href="#ref-4">4</a></sup>. While autonomous systems excel at routine driving, they can falter when faced with nuanced, non-standard situations, such as a school bus with its stop arm deployed, which requires a specific, non-negotiable response<sup><a href="#ref-4">4</a></sup>. The school bus scenario is a particularly sensitive edge-case because it involves the safety of children and is governed by strict, universally understood traffic laws<sup><a href="#ref-6">6</a></sup>. Waymo’s Chief Safety Officer, Mauricio Peña, acknowledged the company’s responsibility, stating that while the company is proud of its safety record—claiming its injury crashes are twelve times less frequent than those involving human drivers—it must recognise when its behaviour should be better<sup><a href="#ref-6">6</a>,<a href="#ref-7">7</a>,<a href="#ref-11">11</a></sup>. The decision to file a voluntary recall, which is essentially a public notification of a software update already deployed or planned, reflects a commitment to transparency and compliance with federal safety standards<sup><a href="#ref-7">7</a>,<a href="#ref-10">10</a></sup>. No injuries have been reported in connection with the school bus incidents<sup><a href="#ref-6">6</a>,<a href="#ref-7">7</a>,<a href="#ref-11">11</a></sup>.</p>
+        </section>
+        <section>
+           <h2>A History of Software Recalls and Public Trust</h2>
+           <p>The school bus incident is not an isolated event but the latest in a series of software-related safety issues for the Alphabet subsidiary<sup><a href="#ref-7">7</a></sup>. The planned action represents Waymo’s third software recall in approximately 18 months, a pattern that highlights the iterative and often challenging nature of developing fully autonomous driving systems<sup><a href="#ref-1">1</a>,<a href="#ref-7">7</a></sup>. The first of these recent recalls occurred in February 2024, following two collisions in Phoenix, Arizona, on December 11, 2023<sup><a href="#ref-10">10</a></sup>. In that instance, the software incorrectly predicted the future motion of a towed pickup truck, leading to minor vehicle damage but no injuries<sup><a href="#ref-10">10</a></sup>. The recall affected 444 vehicles, and the software fix was deployed across the fleet between December 20, 2023, and January 12, 2024<sup><a href="#ref-1">1</a>,<a href="#ref-10">10</a></sup>. The second major recall was filed in May 2025, affecting 1,212 vehicles equipped with the fifth-generation software<sup><a href="#ref-1">1</a>,<a href="#ref-8">8</a></sup>. This action stemmed from at least 16 reported low-speed incidents between 2022 and late 2024, where robotaxis collided with stationary barriers such as gates and chains<sup><a href="#ref-1">1</a></sup>. The NHTSA had launched a preliminary investigation into this issue in May 2024 after receiving reports of vehicles striking visible objects that a competent human driver would be expected to avoid<sup><a href="#ref-1">1</a></sup>. Each recall, while voluntary and often involving only software updates, chips away at the public trust that is essential for the widespread adoption of autonomous vehicles<sup><a href="#ref-4">4</a></sup>. The industry is currently navigating a complex regulatory environment, with NHTSA attempting to establish a consistent national standard while balancing the need for innovation with the imperative of public safety<sup><a href="#ref-12">12</a>,<a href="#ref-14">14</a></sup>. The repeated need for software recalls, particularly for failures in fundamental traffic laws like stopping for a school bus, provides ammunition to critics who argue that the technology is being deployed too quickly without sufficient real-world testing and regulatory oversight<sup><a href="#ref-15">15</a></sup>.</p>
+        </section>
+        <section>
+            <h2>Conclusion</h2>
+           <p>The Waymo software recall over the school bus incidents serves as a potent symbol of the current tension in the autonomous vehicle sector: the clash between the technological promise of a safer future and the immediate, non-negotiable demands of public safety on today’s roads<sup><a href="#ref-4">4</a>,<a href="#ref-7">7</a></sup>. While Waymo correctly points to its overall safety record, the failure to correctly handle a scenario as critical as a stopped school bus demonstrates that the industry’s AI systems still struggle with the unpredictable nuances of human-centric environments<sup><a href="#ref-6">6</a>,<a href="#ref-7">7</a></sup>. The federal investigation and the company’s third software recall in 18 months confirm that the regulatory environment is hardening, moving away from a purely hands-off approach toward one that demands demonstrable, verifiable safety compliance<sup><a href="#ref-4">4</a>,<a href="#ref-12">12</a></sup>. For the autonomous vehicle industry to achieve its goal of mass deployment, it must not only prove its technology is better than human drivers in routine situations but that it is flawless in the most critical, life-threatening edge-cases, starting with the safety of children at a school bus stop<sup><a href="#ref-4">4</a>,<a href="#ref-6">6</a></sup>.</p>
+        </section>
+        <section class="references">
+            <h2>References</h2>
+            <ol>
+               <li id="ref-1">
+                   <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlWXzeqRezp-_sP1UyfCHnUITfEtXlEm1ZxL0R0CweGI1knzB_ugDwnglagl0ZbcXW28mhpn3XtqFWHGQJEk3ptPz7yPSo0ZCnqC4zhcMSYvPDkwzKD3LN6jOimB0fp4S8EXFMnM2I8vOPfHyRkRjNm2ire3ieDUqtMeGBeMNqCoKBmDprg4RmzcJSki7dKg==" target="_blank">Waymo recalled 1200 robotaxis after repeated crashes with road barriers, filings show</a>
+                   <p class="ref-justification">Supports details on the May 2025 recall (1,212 vehicles, 16 low-speed incidents with barriers), the February 2024 recall (444 vehicles), and the fact that the school bus recall is the third software-related recall.</p>
+                </li>
+               <li id="ref-2">
+                   <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEvyEBb3Zd4tIlkeFGuWaWphp8x_fXPo0OKhGrQSPrW_8P-jt1LzR8uM4ean0alJfCzSBeJO44SX_bPtyCk9sVT919PN6JLKagkUEW7XrJ8eEVSDGsnhFauMOSkc28TZFsWdgNJkEl2MdpvCsB4rVqjMq2hQJ-ny2Y2Gbw9tezV39ZIlhQB2wa3Uueb3mcBtkBSiZqMXfyEyLohIGaQKzSlwjMLgTC72kT34NQR5KfjPAqrH391Ng2Z_ZapX_X9" target="_blank">Waymo to issue recall after reports of self-driving cars illegally passing stopped school buses in Texas - Fox Business</a>
+                   <p class="ref-justification">Confirms the 19 incidents reported by Texas officials, the 20 citations from AISD, and the nature of the illegal passing (slowing/stopping then proceeding).</p>
+                </li>
+               <li id="ref-3">
+                   <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6rtA5u3m85XTNJJ6RH4RUqkRNwLNEvaF8aCIMGh1D5i3EBhX51vm1Ynkgp3m_cnLmc-qEWSVl2-46um679JcnWH1sq36W6soA1kh3GIyhjRKHzpewPVcDO9ZbKvXgZqh7Dfxb1Y_30SYtyZ6GySeF5JyOGYbAtJ7NfBPhQD7fYksKFbr6LB4BwKnjHSGHnPproO8S" target="_blank">Waymo Robotaxis Under Investigation for Driving Around School Bus - Car and Driver</a>
+                   <p class="ref-justification">Provides the specific date of the Atlanta incident (September 22, 2025) that triggered the NHTSA probe, the estimated number of vehicles under investigation (2,000), and the initial failure mode (came to a stop, then drove around).</p>
+                </li>
+               <li id="ref-4">
+                   <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZuJSHqowKX5vw301ko9mfOdSBBR2nV2RHztIPKCrS6o_UtW9_nCKeEsOsB-7YKVIs1raQwoXCvlpxCWuZFWDKgDNf8jFyqKP-8RkDnLuj9CiYlvRdRSi5zvH_3mPzX1EKdr376_bDLW3WBvp15z1s2wlnNpdXl4a_FX5qKOW2Yq-i4FVR2AcOGU0xE0zZmEKo-ucSwyt5" target="_blank">Waymo Robotaxis Face NHTSA Probe for Passing Stopped School Buses - WebProNews</a>
+                   <p class="ref-justification">Explains the regulatory scrutiny, the scope of the NHTSA investigation (2,000 vehicles), the persistence of the problem after the initial fix, and frames the issue as a challenge of 'edge-case detection' and public trust.</p>
+                </li>
+               <li id="ref-5">
+                   <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFhB5juosakLp5AnYZrP9Br-momw6QTcu8mpu9GBIjP3aIuqamNARCQ8OIQVt-r1pI9gsbx1Wd32nezJ4aCiFsXg-GZ7qAemBUUedICBSllbinpj4q_XDHkEt4zoxnNHrL6Tw-3p7MIflACgM2OfgvnmNmp8ZOpN5VzxGuOeHbHPcVN6-7mfAZF1_Mfm05LbullFjgreWznpfLouLtXSKLmdMga0R8NCtQovyoR" target="_blank">Waymo will recall software after its self-driving cars passed stopped school buses | WUNC</a>
+                   <p class="ref-justification">Confirms the NHTSA investigation was opened in October in response to a media report and the 19 documented instances of illegal passing by the Austin Independent School District.</p>
+                </li>
+               <li id="ref-6">
+                   <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHkVIgz9oP_8xF5gmNboKQXnUxmGwSTxQk5xVyggm0BtBzQbkiGdrHOir5fEUfCkyIvxoNkyTfdCNTAYxw1fFnUYuxC91e9zg-7-7f-mzQZudbLPtL4JXZm3a9BpaAsnfzxHFq9rWS7zU88o5VeyFV7nqWzYduD1zsc93LVSSsJGb4W8TWStaBKuV-g6y6kdZ0=" target="_blank">Waymo to recall robotaxi software after school bus incidents spark scrutiny from feds</a>
+                   <p class="ref-justification">Details the specific software issue (slow/stop then proceed), the November 17 software update, the failure of that update (at least five incidents after), the December 3 NHTSA request, Waymo's safety claims (12x fewer injury crashes), and the lack of reported injuries.</p>
+                </li>
+               <li id="ref-7">
+                   <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGM2Z7PpmP10m17mJTwZHVh2mDuLZSMJslzj1hkfQf7AsjYRc-JbEEJoL180rsEHhAsiruRQQLi9dt_5tIPsiogiGDC18-tWSTiPQoNf7ZefIE-TJMSCxfdKIvDURU3aynVpxmUOkJWze_R5w-uWl2gJE7fc9em6NSbZgjWE7OQEej1qQEXjqw1mMkqUP3qTBbpGTFaNWc4Mmskq7_kerr9312PuiuMn9hGUIVYr-1s3CFCT3NWyhNpC070YZKVs1I34FqqTS__etUbwEIIXQ==" target="_blank">Waymo's robotaxi fleet is being recalled again, this time for failing to stop for school buses</a>
+                   <p class="ref-justification">Confirms the voluntary software recall is the third in 2025, the nature of the failure (failing to stop for stop signs/flashing lights), Waymo's safety statement, and the fact that the recall is a software update across the fleet.</p>
+                </li>
+               <li id="ref-8">
+                   <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGXAK_9MCPw4Ug0zBjlOuMIsl7MYJrvzNGU-IFI0hArWlKQlnRHHy5fKVCz1xCpW2sEvZnQ-YSSLnEbuAdRgXuZiIiJT_-w-aNyEpxibtVgi4Vx3TiBe0r3_3evwoHHAZRx2Y17ja7D7ULKiAR_bQqzC24=" target="_blank">Waymo voluntarily recalled 1200 robotaxis - Mashable</a>
+                   <p class="ref-justification">Provides additional context on the May 2025 recall, stating it affected 1,212 vehicles and involved collisions with objects like gates and chains.</p>
+                </li>
+               <li id="ref-10">
+                   <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHubVzuJWhwCPYbnQ--jkY2-q84M2c_7187BBekbL6s19H_fvK_P_vy4cOm3c2IcqN32XbUr0TcaciZJp7LifayIXK9QOo_cVeAh4NQuipSQ-inG2OASimJP_ygxdSFNJh9CjL1qDa5mtzwbs7gsOwbb-NU8F6iXCX2ypkMTbCy2DSm" target="_blank">Voluntary recall of our previous software - Waymo</a>
+                   <p class="ref-justification">Provides first-hand details on the February 2024 recall, including the date of the incidents (December 11, 2023), the cause (incorrect prediction of towed vehicle motion), and the number of vehicles affected (444).</p>
+                </li>
+               <li id="ref-11">
+                   <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGL_SrgXkm4Nqoz4YW6WihbWhGqfOYTXUTU206ZZRy_GlELdmA7KXKH5udnkTmm9rjrej3c6NVyEqxAHDzVnfi7B3RApWMAHIKnNKxSVur0heR3itEiq_cbuzc5saVMGg9g0X_7bgjORW12ykMcOXFiCu2MnZfDqjHHTi6kCox5kEBFTYcMDn4PR35n6nf5oDsUjKdaTj7m82wZYl4CGF330GzBLHxzviu9TQ8kIxWoouVN5mw=" target="_blank">Waymo will recall software after its self-driving cars passed stopped school buses | WSIU</a>
+                   <p class="ref-justification">Cites the Austin Independent School District letter detailing a near-miss where a Waymo vehicle passed a bus 'only moments after a student crossed in front of the vehicle,' and confirms the lack of injuries.</p>
+                </li>
+               <li id="ref-12">
+                   <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGst3C-jOzGSOQRSR_5N2fkfgM6v-Rzwe314a-4DX8x-eF49KL-E2-jCkan-DwBA0D7W97yNuiSxJpsFZK_e0OnDTIVg7xsD6VnSh7t90iHKHfqiPx44sOeBWyhdT3qMH0RfzPl5LIsCNJXbm6lhSoyExQ-l9xCEVPenZa6sa1KNYyAfqKmKuJti718IkSAoXS4devxMQ==" target="_blank">NHTSA Eases Automated Vehicle Restrictions, Crash Reporting | Driverless Report</a>
+                   <p class="ref-justification">Provides context on the broader regulatory landscape, including NHTSA's May 2025 framework change to ease restrictions, focus on a risk-based approach, and the goal of a single national standard.</p>
+                </li>
+               <li id="ref-13">
+                   <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGCZvh6PF5SGWmftckVKxXcJ3qYZabHgQUydmW6n01U8JjihoJFwtZfBM4P-aWhusn3LdZX8W_C_AKag6f2YvrXVT3ibJtRZJqXuJz795gvp5zTBKRXgnphE228hF-qICT1hfyi" target="_blank">Waymo issuing voluntary software recall to address safety - YouTube</a>
+                   <p class="ref-justification">Confirms the 20 citations from Austin ISD, the November 17 software fix, and the continued investigation.</p>
+                </li>
+               <li id="ref-14">
+                   <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGexLrOyC5DAYcovRWcLR1s2wc7fbJy2nrivA7v-Aa4mrdvcno6wNvyXMsFQUTNTsFg3YmfjcqTur57-N-CSvx9u-LteQZnTDurdH8H05wHG7J06ioz3oRpwSgCfFJ5q9oaAjNClb2xCmWdK9uBE9qK-NXsjIf6IKk=" target="_blank">Automated Vehicle Safety - NHTSA</a>
+                   <p class="ref-justification">Used to provide general context on NHTSA's role in monitoring AV safety and the goal of a single national standard.</p>
+                </li>
+               <li id="ref-15">
+                   <a href="https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH7wOlqQrbliUGYdWXZszoVc3BucTYWvUl-mYhTVnhVibqGdjmiI-stcFzwxEt-BaHKnVAi9yek2m8ikfEettJRkd7rdkuDVhk1iLoOeDnujQZNazL0du79RF3fXzOW679cegxOjkwmMmDWQzXXntmTUIyMoXLn32WzunK6LKHnDXq7MOmkmRCDljpUHb0msqIWmWrau5RSgo0=" target="_blank">Trump transition challenges NHTSA's autonomous driving oversight - Nasdaq</a>
+                   <p class="ref-justification">Provides context on the political and regulatory debate surrounding crash-reporting requirements and the balance between innovation and public safety.</p>
+                </li>
+            </ol>
+        </section>
+    </main>
+</body>
+</html>
