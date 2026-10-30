@@ -51,7 +51,9 @@ a { color: var(--accent); text-underline-offset: 2px; }
 .kicker { font-family: var(--sans); text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; color: var(--accent); margin: 0 0 8px; font-weight: 600; }
 h1 { font-size: clamp(1.7rem, 4.5vw, 2.35rem); line-height: 1.2; margin: 0 0 12px; text-wrap: balance; }
 .standfirst { font-size: 1.18rem; color: var(--muted); margin: 0 0 18px; line-height: 1.5; }
-.hero { float: right; width: 150px; height: 150px; object-fit: cover; margin: 0 0 12px 18px; border-radius: 4px; border: 1px solid var(--rule); }
+.head-row { display: flex; flex-direction: row-reverse; align-items: flex-start; gap: 24px; }
+.head-text { flex: 1 1 auto; min-width: 0; }
+.hero { flex: none; width: 150px; height: 150px; object-fit: cover; margin: 6px 0 18px; border-radius: 4px; border: 1px solid var(--rule); }
 .meta { font-family: var(--sans); font-size: .86rem; display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; margin: 0 0 20px; padding: 14px 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); clear: both; }
 .meta dt { color: var(--muted); }
 .meta dd { margin: 0; }
@@ -111,7 +113,8 @@ html.easy-read body { font-family: Verdana, Tahoma, var(--sans); font-size: 1.12
 html.easy-read p, html.easy-read li { max-width: 36em; }
 @media (max-width: 560px) {
   body { font-size: 1.02rem; }
-  .hero { width: 96px; height: 96px; }
+  .head-row { display: block; }
+  .hero { float: right; width: 96px; height: 96px; margin: 6px 0 8px 14px; }
   .meta { grid-template-columns: 1fr; gap: 0; }
   .meta dt { margin-top: 6px; }
   .depth button .d-sub { font-size: .68rem; }
@@ -129,9 +132,13 @@ html.easy-read p, html.easy-read li { max-width: 36em; }
 <article class="paper">
 <header class="paper-head">
 <p class="kicker">Environment</p>
+<div class="head-row">
+<img class="hero" src="../images/Image_20261029_112714.jpg" alt="">
+<div class="head-text">
 <h1>Greenhouse gas concentrations reached new records in 2025</h1>
 <p class="standfirst">The World Meteorological Organization reports that carbon dioxide, methane and nitrous oxide all reached record global concentrations in 2025, although carbon dioxide and methane rose more slowly than in 2024.</p>
-<img class="hero" src="../images/Image_20261029_112714.jpg" alt="">
+</div>
+</div>
 <dl class="meta">
 <dt>Published</dt><dd>29 October 2026, 11:27</dd>
 <dt>Written by</dt><dd>Claude Opus (an AI model by Anthropic), from public sources</dd>
