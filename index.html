@@ -54,18 +54,18 @@
     <!-- Header Section -->
     <header class="bg-white/80 backdrop-blur-lg border-b border-gray-200 sticky top-0 z-10">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
+            <div class="flex flex-col md:flex-row md:items-center justify-between py-3 md:py-0 md:h-20">
                 <!-- Logo and Tagline -->
                 <div>
-                     <h1 class="text-3xl font-extrabold logo-text">Fact-Checked News AI</h1>
+                     <h1 class="text-2xl md:text-3xl font-extrabold logo-text">Fact-Checked News AI</h1>
                      <p class="text-xs text-gray-500 mt-1">AI-Generated & Fact-Checked News</p>
                 </div>
                 <!-- Navigation Links -->
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="#" class="bg-gray-100 text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
-                        <a href="#" class="text-gray-600 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition">World</a>
-                        <a href="#" class="text-gray-600 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition">About</a>
+                <div class="mt-2 md:mt-0">
+                    <div class="-ml-3 md:ml-10 flex items-baseline space-x-4">
+                        <a href="#" data-filter="home" class="bg-gray-100 text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
+                        <a href="#world" data-filter="world" class="text-gray-600 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition">World</a>
+                        <a href="#about" data-filter="about" class="text-gray-600 hover:bg-gray-100 px-3 py-2 rounded-md text-sm font-medium transition">About</a>
                     </div>
                 </div>
             </div>
@@ -76,13 +76,13 @@
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         
         <!-- Hero Section -->
-        <section class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">Latest News & Analysis</h2>
-            <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">AI-powered, Ad-free, in-depth reporting on the stories that matter.</p>
+        <section id="hero" class="text-center mb-16">
+            <h2 id="hero-title" class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">Latest News & Analysis</h2>
+            <p id="hero-text" class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">AI-powered, Ad-free, in-depth reporting on the stories that matter.</p>
         </section>
 
         <!-- Articles Grid -->
-        <section class="grid grid-cols-1 gap-8">
+        <section id="articles" class="grid grid-cols-1 gap-8">
 
             <!-- Insert New Article Here -->    
 
@@ -213,7 +213,7 @@
 </article>
     
 
-<article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl p-6">
+<article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl p-6">
     <div class="inline-flex items-center">
         <a href="images/Image_20251207_125206.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
             <img class="h-24 w-24 object-cover" src="images/Image_20251207_125206.jpg" alt="China-France Talks Mix Climate Goals and Trade Limits">
@@ -297,7 +297,7 @@
 </article>
     
 
-<article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl p-6">
+<article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl p-6">
     <div class="inline-flex items-center">
         <a href="images/Image_20251207_115130.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0">
             <img class="h-24 w-24 object-cover" src="images/Image_20251207_115130.jpg" alt="Trump’s Sustained War Against CNN Journalist Collins">
@@ -675,7 +675,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251112_044121.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251112_044121.jpg" alt="Politics: The Netherlands Rejects Key Climate Targets">
                 </a>
@@ -801,7 +801,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251112_025616.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251112_025616.jpg" alt="Disaster: Catastrophic Hurricane Melissa Strikes The Caribbean">
                 </a>
@@ -947,7 +947,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251111_231335.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251111_231335.jpg" alt="The Amazonian Reckoning">
                 </a>
@@ -983,7 +983,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251111_224639.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251111_224639.jpg" alt="The Catastrophic Wake of Hurricane Melissa in the Caribbean">
                 </a>
@@ -1019,7 +1019,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251111_221931.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251111_221931.jpg" alt="The Twin Blasts and the Unravelling of South Asian Security">
                 </a>
@@ -1037,7 +1037,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_233719.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_233719.jpg" alt="The Fallen Mercy Flight Over Florida’s Suburbs">
                 </a>
@@ -1073,7 +1073,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_225811.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_225811.jpg" alt="The Unthinkable Handshake A Former Al-Qaeda Commander’s Path to the Oval Office">
                 </a>
@@ -1127,7 +1127,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_163647.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_163647.jpg" alt="The Twenty-Day Confinement and the Unfinished Trial of a Former President">
                 </a>
@@ -1145,7 +1145,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_162146.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_162146.jpg" alt="The Supreme Court’s Quiet Refusal to Reopen the Marriage Equality Debate">
                 </a>
@@ -1163,7 +1163,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_160645.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_160645.jpg" alt="The Jihadi-Turned-Statesman and the White House Handshake">
                 </a>
@@ -1199,7 +1199,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_153644.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_153644.jpg" alt="The Red Fort Shadow">
                 </a>
@@ -1235,7 +1235,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_150642.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_150642.jpg" alt="The Psychiatrist, the SUV, and the Unclassifiable Attack on a German Christmas Market">
                 </a>
@@ -1253,7 +1253,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_145142.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_145142.jpg" alt="The Digital Incitement and the Trial of a Former President's Daughter">
                 </a>
@@ -1271,7 +1271,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_143641.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_143641.jpg" alt="The Land Mine and the Collapse of a Trump-Brokered Peace in Southeast Asia">
                 </a>
@@ -1289,7 +1289,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_142140.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_142140.jpg" alt="The Symbolic Shield">
                 </a>
@@ -1307,7 +1307,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_140639.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_140639.jpg" alt="The Reciprocal Failure The UK-France Migration Deal and the Return of the Deported">
                 </a>
@@ -1325,7 +1325,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_135139.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_135139.jpg" alt="The President, the Drone, and the Plot to Engineer a Crisis">
                 </a>
@@ -1379,7 +1379,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_130637.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_130637.jpg" alt="The Andaman Sea's Deadly Passage and the Stateless Exodus">
                 </a>
@@ -1397,7 +1397,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_125136.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_125136.jpg" alt="The Fall and Swift Release of Nicolas Sarkozy">
                 </a>
@@ -1415,7 +1415,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_123635.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_123635.jpg" alt="The Price of Paralysis">
                 </a>
@@ -1451,7 +1451,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_114450.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_114450.jpg" alt="The Nightmare of La Santé and the Fall of a French President">
                 </a>
@@ -1487,7 +1487,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_111449.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_111449.jpg" alt="The Winter Siege and Kyiv's Desperate Search for Air Defence">
                 </a>
@@ -1505,7 +1505,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_105948.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_105948.jpg" alt="The General's Shadow">
                 </a>
@@ -1541,7 +1541,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_102947.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_102947.jpg" alt="The Forty-Day Freeze A Political Crisis and the Cost of American Governance">
                 </a>
@@ -1559,7 +1559,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_101055.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_101055.jpg" alt="The Unchecked Power of the Atlantic and Tenerife's Coastal Reckoning">
                 </a>
@@ -1595,7 +1595,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_031253.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_031253.jpg" alt="The Scar of Rio Bonito do Iguaçu and the Climate Reckoning in Brazil's South">
                 </a>
@@ -1613,7 +1613,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_025753.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_025753.jpg" alt="The Amazonian Crucible A Test of Global Climate Resolve">
                 </a>
@@ -1631,7 +1631,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_024252.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_024252.jpg" alt="The Parched Earth and the Political Fault Lines of Iran's Water Crisis">
                 </a>
@@ -1649,7 +1649,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_022752.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_022752.jpg" alt="The Supercarrier and the Sea Drone A New Age of Naval Power">
                 </a>
@@ -1667,7 +1667,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_021251.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_021251.jpg" alt="The Winter Weapon A New Barrage on Ukraine's Energy Grid">
                 </a>
@@ -1703,7 +1703,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_014250.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_014250.jpg" alt="The Long Shadow of Black Friday and the Return of Hadar Goldin">
                 </a>
@@ -1721,7 +1721,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_012749.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_012749.jpg" alt="The Forty-Day Freeze">
                 </a>
@@ -1739,7 +1739,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_011248.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_011248.jpg" alt="The Diplomatic Fault Line Running Through the G20 Summit in Johannesburg">
                 </a>
@@ -1757,7 +1757,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251110_005747.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251110_005747.jpg" alt="The Forty-Day Freeze and the Looming Air Travel Catastrophe">
                 </a>
@@ -1811,7 +1811,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251109_234244.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251109_234244.jpg" alt="The Forty-Day Freeze">
                 </a>
@@ -1847,7 +1847,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251109_231243.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251109_231243.jpg" alt="The Double Calamity Super Typhoon Fung-wong Strikes a Battered Philippines">
                 </a>
@@ -1883,7 +1883,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251108_131201.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251108_131201.jpg" alt="The Winter Siege of the Grid and the Fracture of Western Resolve">
                 </a>
@@ -1919,7 +1919,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251108_124137.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251108_124137.jpg" alt="The Budapest Exception">
                 </a>
@@ -1937,7 +1937,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251108_122224.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251108_122224.jpg" alt="A Nation on Edge">
                 </a>
@@ -1991,7 +1991,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251108_023116.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251108_023116.jpg" alt="The President's Unlawful Order">
                 </a>
@@ -2009,7 +2009,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251108_021615.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251108_021615.jpg" alt="The Last Sombre Exchange">
                 </a>
@@ -2027,7 +2027,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251108_020115.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251108_020115.jpg" alt="The Final Stand at Universal Ostrich Farms">
                 </a>
@@ -2045,7 +2045,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251108_014614.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251108_014614.jpg" alt="The Shattered Silence of Friday Prayers">
                 </a>
@@ -2063,7 +2063,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251108_013113.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251108_013113.jpg" alt="The Dragon's Steel Tide">
                 </a>
@@ -2117,7 +2117,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251108_004612.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251108_004612.jpg" alt="Fire on the Wing">
                 </a>
@@ -2135,7 +2135,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251108_003111.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251108_003111.jpg" alt="A War on the Waves">
                 </a>
@@ -2153,7 +2153,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251108_001610.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251108_001610.jpg" alt="The Deluge and the Dread">
                 </a>
@@ -2171,7 +2171,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251108_000110.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251108_000110.jpg" alt="The Unlikely Ascent of Zohran Mamdani and the Remaking of New York">
                 </a>
@@ -2207,7 +2207,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251107_233108.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251107_233108.jpg" alt="The Illiberal Alliance">
                 </a>
@@ -2225,7 +2225,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251107_232026.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251107_232026.jpg" alt="The Amazon's Last Stand">
                 </a>
@@ -2243,7 +2243,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251107_225018.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251107_225018.jpg" alt="The Scars of El Fasher and the Mirage of a Sudan Truce">
                 </a>
@@ -2333,7 +2333,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251027_110647.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251027_110647.jpg" alt="The Chainsaw's Mandate">
                 </a>
@@ -2351,7 +2351,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251027_105146.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251027_105146.jpg" alt="Melissa's Catastrophic Crawl">
                 </a>
@@ -2369,7 +2369,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251027_103645.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251027_103645.jpg" alt="The Apollo Gallery Breach">
                 </a>
@@ -2387,7 +2387,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251026_174407.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251026_174407.jpg" alt="The Fall of El Fasher">
                 </a>
@@ -2405,7 +2405,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251026_173906.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251026_173906.jpg" alt="The Tariff Tightrope">
                 </a>
@@ -2423,7 +2423,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251026_173406.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251026_173406.jpg" alt="The Four-Minute Heist">
                 </a>
@@ -2441,7 +2441,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251026_172905.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251026_172905.jpg" alt="Russia’s Nuclear Cruise Missile">
                 </a>
@@ -2477,7 +2477,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251026_171814.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251026_171814.jpg" alt="The Seven-Minute Heist">
                 </a>
@@ -2495,7 +2495,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251026_171313.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251026_171313.jpg" alt="The Yellow Line Diplomacy">
                 </a>
@@ -2513,7 +2513,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251026_170813.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251026_170813.jpg" alt="The Seven-Minute Breach">
                 </a>
@@ -2549,7 +2549,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251026_165013.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251026_165013.jpg" alt="The Slow-Motion Catastrophe">
                 </a>
@@ -2567,7 +2567,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251026_165013.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251026_165013.jpg" alt="The Slow-Motion Catastrophe">
                 </a>
@@ -2585,7 +2585,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251026_164513.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251026_164513.jpg" alt="The Louvre Heist">
                 </a>
@@ -2621,7 +2621,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251026_131652.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251026_131652.jpg" alt="The Seven-Minute Heist">
                 </a>
@@ -2639,7 +2639,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251026_084245.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251026_084245.jpg" alt="The Nightly Barrage">
                 </a>
@@ -2657,7 +2657,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251026_080433.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251026_080433.jpg" alt="The Crown's New Curse">
                 </a>
@@ -2711,7 +2711,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251026_074931.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251026_074931.jpg" alt="The Reagan Ad and the Tariff War">
                 </a>
@@ -2747,7 +2747,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251026_073741.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251026_073741.jpg" alt="Kuala Lumpur Accords">
                 </a>
@@ -2765,7 +2765,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251025_214251.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251025_214251.jpg" alt="A Tragic Fall in the Eternal City">
                 </a>
@@ -2783,7 +2783,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251025_213250.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251025_213250.jpg" alt="The Queen Mother's Enduring Reign">
                 </a>
@@ -2801,7 +2801,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251025_212744.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251025_212744.jpg" alt="Left-Wing Tsunami">
                 </a>
@@ -2837,7 +2837,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251025_192506.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251025_192506.jpg" alt="Washington's Drug War Escalation">
                 </a>
@@ -2891,7 +2891,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251025_154751.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251025_154751.jpg" alt="Trump's Asia Tour">
                 </a>
@@ -2909,7 +2909,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251025_093603.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251025_093603.jpg" alt="The Reagan Riff">
                 </a>
@@ -2927,7 +2927,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251025_085347.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251025_085347.jpg" alt="The Technocrat Handover">
                 </a>
@@ -2945,7 +2945,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251025_081451.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251025_081451.jpg" alt="The Reagan Rebuke">
                 </a>
@@ -2963,7 +2963,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251025_080344.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251025_080344.jpg" alt="The Supercarrier's Caribbean Turn">
                 </a>
@@ -2981,7 +2981,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251021_092345.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251021_092345.jpg" alt="The President's Cell">
                 </a>
@@ -3035,7 +3035,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251020_131501.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251020_131501.jpg" alt="The Andean Pivot">
                 </a>
@@ -3053,7 +3053,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251020_124645.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251020_124645.jpg" alt="The Budapest Brinkmanship">
                 </a>
@@ -3125,7 +3125,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251020_113015.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251020_113015.jpg" alt="The Seven-Minute Heist">
                 </a>
@@ -3197,7 +3197,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251020_084327.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251020_084327.jpg" alt="The Great Hall's Reckoning">
                 </a>
@@ -3215,7 +3215,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251020_083458.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251020_083458.jpg" alt="The Night the Jumbo Jet Veered">
                 </a>
@@ -3233,7 +3233,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251020_010241.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251020_010241.jpg" alt="The Rogue's Return">
                 </a>
@@ -3269,7 +3269,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251020_003240.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251020_003240.jpg" alt="The Unending Frontier">
                 </a>
@@ -3323,7 +3323,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251019_221813.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251019_221813.jpg" alt="The Digital Crown and the Contagious Youth Revolt">
                 </a>
@@ -3395,7 +3395,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251019_205547.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251019_205547.jpg" alt="The Collapse of the Cocaine Consensus">
                 </a>
@@ -3413,7 +3413,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251019_205046.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251019_205046.jpg" alt="The Price of Peace">
                 </a>
@@ -3449,7 +3449,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251019_204046.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251019_204046.jpg" alt="The Seven-Minute Siege">
                 </a>
@@ -3467,7 +3467,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251019_203546.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251019_203546.jpg" alt="The Ceasefire's Edge">
                 </a>
@@ -3521,7 +3521,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251018_190710.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251018_190710.jpg" alt="The White House Pivot">
                 </a>
@@ -3539,7 +3539,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251018_185850.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251018_185850.jpg" alt="The White House Pivot">
                 </a>
@@ -3575,7 +3575,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251018_182912.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251018_182912.jpg" alt="The White House Pivot">
                 </a>
@@ -3593,7 +3593,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251017_222213.jpg" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251017_222213.jpg" alt=""Today's Date"">
                 </a>
@@ -3611,7 +3611,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251009_083815.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251009_083815.png" alt="">
                 </a>
@@ -3629,7 +3629,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251008_131437.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251008_131437.png" alt="France's Political Tightrope">
                 </a>
@@ -3683,7 +3683,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251008_122936.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251008_122936.png" alt="The Martyrdom of a MAGA Icon">
                 </a>
@@ -3737,7 +3737,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251008_114435.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251008_114435.png" alt="Madrid's Luxury Hotel Dream Crumbles">
                 </a>
@@ -3773,7 +3773,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251008_111434.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251008_111434.png" alt="Myanmar's Skies of Terror">
                 </a>
@@ -3809,7 +3809,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251008_104538.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251008_104538.png" alt="A Nation on the Brink">
                 </a>
@@ -3863,7 +3863,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251008_093348.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251008_093348.png" alt="">
                 </a>
@@ -3881,7 +3881,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251008_090225.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251008_090225.png" alt="Cairo's Crucial Crossroads">
                 </a>
@@ -3917,7 +3917,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251007_191454.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251007_191454.png" alt="The Shadow Broker">
                 </a>
@@ -4043,7 +4043,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251007_184840.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251007_184840.png" alt="A Tale of Two Basins">
                 </a>
@@ -4061,7 +4061,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251007_184440.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251007_184440.png" alt="A Nation on Edge">
                 </a>
@@ -4187,7 +4187,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251007_091704.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251007_091704.png" alt="France in the Balance">
                 </a>
@@ -4205,7 +4205,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251007_013909.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251007_013909.png" alt="The Architect of Austerity">
                 </a>
@@ -4223,7 +4223,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251007_013419.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251007_013419.png" alt="The Stalled Deportation Machine">
                 </a>
@@ -4241,7 +4241,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251007_012912.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251007_012912.png" alt="Whiteout on the Roof of the World">
                 </a>
@@ -4259,7 +4259,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251007_012457.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251007_012457.png" alt="Washington's Stalemate">
                 </a>
@@ -4277,7 +4277,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251007_012047.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251007_012047.png" alt="The President, The Guard, and The Courts">
                 </a>
@@ -4295,7 +4295,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251007_011614.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251007_011614.png" alt="The Politics of Clemency">
                 </a>
@@ -4331,7 +4331,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251007_010659.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251007_010659.png" alt="Two Years On">
                 </a>
@@ -4403,7 +4403,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_192653.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_192653.png" alt="Darfur's Reckoning">
                 </a>
@@ -4457,7 +4457,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_191123.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_191123.png" alt="A Glimmer of Hope in the Gaza Rubble">
                 </a>
@@ -4475,7 +4475,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_190723.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_190723.png" alt="Darfur's Reckoning">
                 </a>
@@ -4511,7 +4511,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_185938.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_185938.png" alt="Darfur's Day of Reckoning">
                 </a>
@@ -4529,7 +4529,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_185604.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_185604.png" alt="">
                 </a>
@@ -4547,7 +4547,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_185429.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_185429.png" alt="The Final Chapter">
                 </a>
@@ -4565,7 +4565,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_184842.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_184842.png" alt="Cairo's Crucible">
                 </a>
@@ -4601,7 +4601,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_180755.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_180755.png" alt="End of the Line">
                 </a>
@@ -4619,7 +4619,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_180109.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_180109.png" alt="The End of the Road">
                 </a>
@@ -4655,7 +4655,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_173431.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_173431.png" alt="End of the Line">
                 </a>
@@ -4673,7 +4673,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_173226.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_173226.png" alt="The End of the Road for Ghislaine Maxwell">
                 </a>
@@ -4799,7 +4799,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_115236.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_115236.png" alt="A Distant Land of Detention">
                 </a>
@@ -4853,7 +4853,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_104509.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_104509.png" alt="The Kanchanaburi Incident">
                 </a>
@@ -4871,7 +4871,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_094256.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_094256.png" alt="The Twenty-Six Day Ministry">
                 </a>
@@ -4889,7 +4889,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_084715.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_084715.png" alt="Sidoarjo's School of Sorrows">
                 </a>
@@ -4907,7 +4907,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_084116.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_084116.png" alt="The Leongatha Conviction">
                 </a>
@@ -4979,7 +4979,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_082128.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_082128.png" alt="The Oregon Standoff">
                 </a>
@@ -4997,7 +4997,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_081805.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_081805.png" alt="The Crocodile's Embrace">
                 </a>
@@ -5015,7 +5015,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_081533.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_081533.png" alt="The Unsilenced">
                 </a>
@@ -5033,7 +5033,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_081231.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_081231.png" alt="High Seas, High Tensions">
                 </a>
@@ -5051,7 +5051,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_080948.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_080948.png" alt="A World of Storms">
                 </a>
@@ -5105,7 +5105,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_001028.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_001028.png" alt="Caribbean Crucible">
                 </a>
@@ -5159,7 +5159,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251006_000132.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251006_000132.png" alt="The Return of the Oligarch">
                 </a>
@@ -5177,7 +5177,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251005_235808.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251005_235808.png" alt="Syria's Precarious Dawn">
                 </a>
@@ -5195,7 +5195,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251005_235410.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251005_235410.png" alt="Ukraine Under Fire">
                 </a>
@@ -5267,7 +5267,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251005_234129.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251005_234129.png" alt="Chicago's Disquiet">
                 </a>
@@ -5285,7 +5285,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <a href="images/Image_20251005_232401.png" target="_blank" rel="noopener noreferrer" class="flex-shrink-0 ml-6">
                     <img class="h-24 w-24 object-cover" src="images/Image_20251005_232401.png" alt="An American Kaleidoscope of Violence and Disquiet">
                 </a>
@@ -5303,7 +5303,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
+            <article data-filters="world" class="article-card rounded-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl flex items-center">
                 <img class="h-24 w-24 object-cover flex-shrink-0 ml-6" src="images/Image_20251005_230610.png" alt="Whiteout on the Roof of the World">
                 
                 <div class="p-6">
@@ -5335,7 +5335,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-r-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl">
+            <article data-filters="world" class="article-card rounded-r-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl">
                 <div class="p-6">
                     <time class="text-xs text-gray-400 block mb-2">
                         Sunday 05 October 2025 21:12:57
@@ -5349,7 +5349,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-r-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl">
+            <article data-filters="world" class="article-card rounded-r-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl">
                 <div class="p-6">
                     <time class="text-xs text-gray-400 block mb-2">
                         Sunday 05 October 2025 21:09:37
@@ -5419,7 +5419,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-r-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl">
+            <article data-filters="world" class="article-card rounded-r-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl">
                 <div class="p-6">
                     <time class="text-xs text-gray-400 block mb-2">
                         Sunday 05 October 2025 10:36:39
@@ -5433,7 +5433,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-r-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl">
+            <article data-filters="world" class="article-card rounded-r-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl">
                 <div class="p-6">
                     <time class="text-xs text-gray-400 block mb-2">
                         Sunday 05 October 2025 10:32:31
@@ -5447,7 +5447,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-r-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl">
+            <article data-filters="world" class="article-card rounded-r-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl">
                 <div class="p-6">
                     <time class="text-xs text-gray-400 block mb-2">
                         Sunday 05 October 2025 10:27:22
@@ -5475,7 +5475,7 @@
                 </div>
             </article>
 
-            <article class="article-card rounded-r-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl">
+            <article data-filters="world" class="article-card rounded-r-xl shadow-md overflow-hidden transition-shadow duration-300 hover:shadow-xl">
                 <div class="p-6">
                     <time class="text-xs text-gray-400 block mb-2">
                         Sunday 05 October 2025 10:09:09
@@ -5504,6 +5504,15 @@
             </article>
 
         </section>
+        <!-- About Section (shown by the About menu link) -->
+        <section id="about" class="max-w-3xl mx-auto" style="display:none">
+            <div class="article-card rounded-xl shadow-md p-8">
+                <h3 class="text-2xl font-bold mb-4 logo-text">About Fact-Checked News AI</h3>
+                <p class="text-gray-700 mb-4">Fact-Checked News AI publishes in-depth news articles written by artificial intelligence and checked against their sources.</p>
+                <p class="text-gray-700 mb-4">The site is free to read and has no adverts.</p>
+                <p class="text-gray-700">Use <a href="#" class="article-title-link font-semibold">Home</a> for every article, or <a href="#world" class="article-title-link font-semibold">World</a> for international news, politics and global events.</p>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -5515,6 +5524,85 @@
         </div>
     </footer>
 
+    <!-- Menu filters: Home shows every article, World shows world news, About shows the About section -->
+    <script>
+    (function () {
+        var ACTIVE = ['bg-gray-100', 'text-gray-900'];
+        var IDLE = ['text-gray-600', 'hover:bg-gray-100'];
+        var cards = Array.prototype.slice.call(document.querySelectorAll('#articles article.article-card'));
+        var grid = document.getElementById('articles');
+        var about = document.getElementById('about');
+        var title = document.getElementById('hero-title');
+        var text = document.getElementById('hero-text');
+        var homeTitle = title.textContent;
+        var homeText = text.textContent;
+
+        // Category from the file name ("..._World_(Title).html") or the title ("World: ...")
+        function category(card) {
+            var link = card.querySelector('a[href^="articles/"]');
+            var href = link ? decodeURIComponent(link.getAttribute('href')) : '';
+            var m = href.match(/\d_([A-Za-z]+)_\(/);
+            if (m) return m[1].toLowerCase();
+            var h = card.querySelector('h3');
+            m = h ? h.textContent.trim().match(/^([A-Za-z]+):/) : null;
+            return m ? m[1].toLowerCase() : '';
+        }
+
+        function isWorld(card) {
+            var tags = (card.getAttribute('data-filters') || '').split(' ');
+            return tags.indexOf('world') !== -1 || category(card) === 'world';
+        }
+
+        function show() {
+            var view = location.hash.replace('#', '').toLowerCase();
+            if (view !== 'world' && view !== 'about') view = 'home';
+
+            document.querySelectorAll('[data-filter]').forEach(function (a) {
+                var on = a.getAttribute('data-filter') === view;
+                ACTIVE.forEach(function (c) { a.classList.toggle(c, on); });
+                IDLE.forEach(function (c) { a.classList.toggle(c, !on); });
+                if (on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+            });
+
+            about.style.display = view === 'about' ? '' : 'none';
+            grid.style.display = view === 'about' ? 'none' : '';
+
+            var count = 0;
+            cards.forEach(function (card) {
+                var visible = view === 'home' || (view === 'world' && isWorld(card));
+                card.style.display = visible ? '' : 'none';
+                if (visible) count++;
+            });
+
+            if (view === 'world') {
+                title.textContent = 'World News';
+                text.textContent = count + ' articles on international news, politics and global events.';
+            } else if (view === 'about') {
+                title.textContent = 'About';
+                text.textContent = homeText;
+            } else {
+                title.textContent = homeTitle;
+                text.textContent = homeText;
+            }
+        }
+
+        // A plain "#" link does not fire hashchange, so handle Home links directly
+        document.querySelectorAll('a[href="#"]').forEach(function (a) {
+            a.addEventListener('click', function (e) {
+                e.preventDefault();
+                history.pushState(null, '', location.pathname + location.search);
+                show();
+                window.scrollTo(0, 0);
+            });
+        });
+        document.querySelectorAll('a[href="#world"], a[href="#about"]').forEach(function (a) {
+            a.addEventListener('click', function () { setTimeout(function () { window.scrollTo(0, 0); }, 0); });
+        });
+        window.addEventListener('hashchange', show);
+        window.addEventListener('popstate', show);
+        show();
+    })();
+    </script>
 </body>
 </html>
 
